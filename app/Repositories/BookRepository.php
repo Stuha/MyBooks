@@ -37,7 +37,7 @@ class BookRepository
 
     public function update(mixed $data)
     {
-        $book = Book::find($data->id)->update([
+        $book = Book::find($data->id)->updateOrCreate([
             'author_name' => $data->author_name,
             'title' => $data->title,
             'category_id' => $data->category_id,

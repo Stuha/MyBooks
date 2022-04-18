@@ -10,11 +10,11 @@ class Book extends Model
     use HasFactory;
 
     protected $fillable = [
-        'title', 'author_name', 'category', 'publish_at', 'country', 'page_no'
+        'title', 'author_name', 'category_id', 'publish_at', 'country', 'page_no'
     ];
 
     public function categories()
     {
-        return $this->belongsTo(Book::class, 'category_id', 'id');
+        return $this->belongsTo(Category::class, 'category_id', 'id');
     }
 }
