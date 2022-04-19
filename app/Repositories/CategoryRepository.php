@@ -24,7 +24,7 @@ class CategoryRepository
 
     public function update($data)
     {
-        $category = Category::find($data->id)->update([
+        $category = Category::find($data->id)->updateOrCreate([
             'category_name' => $data->category_name
         ]);
 

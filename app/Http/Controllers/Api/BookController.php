@@ -1,12 +1,15 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
+use App\Http\Controllers\Controller;
 use App\Http\Requests\BookRequest;
 use App\Http\Resources\BookCollection;
 use App\Http\Resources\BookResource;
 use App\Repositories\BookRepository;
+use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use function response;
 
 class BookController extends Controller
 {
@@ -19,9 +22,9 @@ class BookController extends Controller
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function index()
+    public function index(Request $request)
     {
-        $books = $this->bookRepository->all();
+        $books = $this->bookRepository->all($request->searchParams);
         $books = new BookCollection($books);
 
         return $books->response();

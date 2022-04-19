@@ -12,14 +12,11 @@
     <nav class="navbar navbar-dark bg-dark  border-bottom">
         <div class="container">
             <a class="navbar-brand" href="/">My Books</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
         </div>
     </nav>
 </div>
 
-<div id="app" class="">
+<div id="app">
     <books-list
         :columns="['author_name', 'title', 'category' , 'publish_at', 'country', 'page_no']"
     ></books-list>

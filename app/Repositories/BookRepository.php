@@ -49,6 +49,15 @@ class BookRepository
         return $book;
     }
 
+    public function search($searchParams)
+    {
+        $searchResult = Book::select('author_name', 'title', 'category_id', 'publish_at', 'country', 'page_no')
+            ->where($searchParams[0], 'LIKE', "%$searchParams[1]%")
+            ->get();
+
+        return $searchResult;
+    }
+
     public function delete(int $id)
     {
         $this->find($id)->delete();

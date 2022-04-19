@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\BookController;
-use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\Api\BookController;
+use App\Http\Controllers\Api\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 /*

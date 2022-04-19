@@ -14,7 +14,7 @@
 #11 /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(2145): Illuminate\\Database\\Eloquent\\Model->__call()
 #12 /var/www/html/app/Repositories/BookRepository.php(11): Illuminate\\Database\\Eloquent\\Model::__callStatic()
 #13 /var/www/html/app/Http/Controllers/BookController.php(24): App\\Repositories\\BookRepository->all()
-#14 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\BookController->index()
+#14 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\Api\\BookController->index()
 #15 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction()
 #16 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(261): Illuminate\\Routing\\ControllerDispatcher->dispatch()
 #17 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(204): Illuminate\\Routing\\Route->runController()
@@ -80,7 +80,7 @@
 #21 /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(2145): Illuminate\\Database\\Eloquent\\Model->__call()
 #22 /var/www/html/app/Repositories/BookRepository.php(11): Illuminate\\Database\\Eloquent\\Model::__callStatic()
 #23 /var/www/html/app/Http/Controllers/BookController.php(24): App\\Repositories\\BookRepository->all()
-#24 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\BookController->index()
+#24 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\Api\\BookController->index()
 #25 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction()
 #26 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(261): Illuminate\\Routing\\ControllerDispatcher->dispatch()
 #27 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(204): Illuminate\\Routing\\Route->runController()
@@ -119,7 +119,7 @@
 #60 /var/www/html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #61 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #62 {main}
-"} 
+"}
 [2022-04-16 17:21:03] local.ERROR: SQLSTATE[HY000] [2002] Connection refused (SQL: select count(*) as aggregate from `books`) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 2002): SQLSTATE[HY000] [2002] Connection refused (SQL: select count(*) as aggregate from `books`) at /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:745)
 [stacktrace]
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(817): Illuminate\\Database\\Connection->runQueryCallback()
@@ -138,7 +138,7 @@
 #13 /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(2145): Illuminate\\Database\\Eloquent\\Model->__call()
 #14 /var/www/html/app/Repositories/BookRepository.php(11): Illuminate\\Database\\Eloquent\\Model::__callStatic()
 #15 /var/www/html/app/Http/Controllers/BookController.php(24): App\\Repositories\\BookRepository->all()
-#16 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\BookController->index()
+#16 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\Api\\BookController->index()
 #17 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction()
 #18 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(261): Illuminate\\Routing\\ControllerDispatcher->dispatch()
 #19 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(204): Illuminate\\Routing\\Route->runController()
@@ -207,7 +207,7 @@
 #24 /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(2145): Illuminate\\Database\\Eloquent\\Model->__call()
 #25 /var/www/html/app/Repositories/BookRepository.php(11): Illuminate\\Database\\Eloquent\\Model::__callStatic()
 #26 /var/www/html/app/Http/Controllers/BookController.php(24): App\\Repositories\\BookRepository->all()
-#27 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\BookController->index()
+#27 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\Api\\BookController->index()
 #28 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction()
 #29 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(261): Illuminate\\Routing\\ControllerDispatcher->dispatch()
 #30 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(204): Illuminate\\Routing\\Route->runController()
@@ -246,7 +246,7 @@
 #63 /var/www/html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #64 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #65 {main}
-"} 
+"}
 [2022-04-16 17:21:32] local.ERROR: SQLSTATE[HY000] [2002] Connection refused (SQL: select count(*) as aggregate from `books`) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 2002): SQLSTATE[HY000] [2002] Connection refused (SQL: select count(*) as aggregate from `books`) at /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:745)
 [stacktrace]
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(817): Illuminate\\Database\\Connection->runQueryCallback()
@@ -265,7 +265,7 @@
 #13 /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(2145): Illuminate\\Database\\Eloquent\\Model->__call()
 #14 /var/www/html/app/Repositories/BookRepository.php(11): Illuminate\\Database\\Eloquent\\Model::__callStatic()
 #15 /var/www/html/app/Http/Controllers/BookController.php(24): App\\Repositories\\BookRepository->all()
-#16 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\BookController->index()
+#16 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\Api\\BookController->index()
 #17 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction()
 #18 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(261): Illuminate\\Routing\\ControllerDispatcher->dispatch()
 #19 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(204): Illuminate\\Routing\\Route->runController()
@@ -334,7 +334,7 @@
 #24 /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(2145): Illuminate\\Database\\Eloquent\\Model->__call()
 #25 /var/www/html/app/Repositories/BookRepository.php(11): Illuminate\\Database\\Eloquent\\Model::__callStatic()
 #26 /var/www/html/app/Http/Controllers/BookController.php(24): App\\Repositories\\BookRepository->all()
-#27 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\BookController->index()
+#27 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\Api\\BookController->index()
 #28 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction()
 #29 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(261): Illuminate\\Routing\\ControllerDispatcher->dispatch()
 #30 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(204): Illuminate\\Routing\\Route->runController()
@@ -373,7 +373,7 @@
 #63 /var/www/html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #64 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #65 {main}
-"} 
+"}
 [2022-04-16 17:22:03] local.ERROR: View [welcome] not found. {"exception":"[object] (InvalidArgumentException(code: 0): View [welcome] not found. at /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:137)
 [stacktrace]
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php(79): Illuminate\\View\\FileViewFinder->findInPaths()
@@ -424,7 +424,7 @@
 #45 /var/www/html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #46 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #47 {main}
-"} 
+"}
 [2022-04-16 17:22:04] local.ERROR: file_put_contents(C:\Users\sasha\programiranje\NextBook\storage\framework/sessions/IOXYvbznhMLk1t6PKmU8araSqB1ZYuf6BPrsNidd): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): file_put_contents(C:\\Users\\sasha\\programiranje\\NextBook\\storage\\framework/sessions/IOXYvbznhMLk1t6PKmU8araSqB1ZYuf6BPrsNidd): Failed to open stream: No such file or directory at /var/www/html/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:187)
 [stacktrace]
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(231): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
@@ -467,7 +467,7 @@
 #37 /var/www/html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #38 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #39 {main}
-"} 
+"}
 [2022-04-16 17:22:09] local.ERROR: View [welcome] not found. {"exception":"[object] (InvalidArgumentException(code: 0): View [welcome] not found. at /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:137)
 [stacktrace]
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php(79): Illuminate\\View\\FileViewFinder->findInPaths()
@@ -518,7 +518,7 @@
 #45 /var/www/html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #46 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #47 {main}
-"} 
+"}
 [2022-04-16 17:22:10] local.ERROR: file_put_contents(C:\Users\sasha\programiranje\NextBook\storage\framework/sessions/OTMKTOkcXPVu0hH4KtwFvbFbSygXItQOJAhGPz5K): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): file_put_contents(C:\\Users\\sasha\\programiranje\\NextBook\\storage\\framework/sessions/OTMKTOkcXPVu0hH4KtwFvbFbSygXItQOJAhGPz5K): Failed to open stream: No such file or directory at /var/www/html/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:187)
 [stacktrace]
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(231): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
@@ -561,7 +561,7 @@
 #37 /var/www/html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #38 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #39 {main}
-"} 
+"}
 [2022-04-16 17:22:28] local.ERROR: SQLSTATE[HY000] [2002] Connection refused (SQL: select count(*) as aggregate from `books`) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 2002): SQLSTATE[HY000] [2002] Connection refused (SQL: select count(*) as aggregate from `books`) at /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:745)
 [stacktrace]
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(817): Illuminate\\Database\\Connection->runQueryCallback()
@@ -580,7 +580,7 @@
 #13 /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(2145): Illuminate\\Database\\Eloquent\\Model->__call()
 #14 /var/www/html/app/Repositories/BookRepository.php(11): Illuminate\\Database\\Eloquent\\Model::__callStatic()
 #15 /var/www/html/app/Http/Controllers/BookController.php(24): App\\Repositories\\BookRepository->all()
-#16 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\BookController->index()
+#16 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\Api\\BookController->index()
 #17 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction()
 #18 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(261): Illuminate\\Routing\\ControllerDispatcher->dispatch()
 #19 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(204): Illuminate\\Routing\\Route->runController()
@@ -649,7 +649,7 @@
 #24 /var/www/html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(2145): Illuminate\\Database\\Eloquent\\Model->__call()
 #25 /var/www/html/app/Repositories/BookRepository.php(11): Illuminate\\Database\\Eloquent\\Model::__callStatic()
 #26 /var/www/html/app/Http/Controllers/BookController.php(24): App\\Repositories\\BookRepository->all()
-#27 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\BookController->index()
+#27 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\Api\\BookController->index()
 #28 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction()
 #29 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(261): Illuminate\\Routing\\ControllerDispatcher->dispatch()
 #30 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(204): Illuminate\\Routing\\Route->runController()
@@ -688,7 +688,7 @@
 #63 /var/www/html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #64 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #65 {main}
-"} 
+"}
 [2022-04-16 17:22:39] local.ERROR: View [welcome] not found. {"exception":"[object] (InvalidArgumentException(code: 0): View [welcome] not found. at /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:137)
 [stacktrace]
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php(79): Illuminate\\View\\FileViewFinder->findInPaths()
@@ -739,7 +739,7 @@
 #45 /var/www/html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #46 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #47 {main}
-"} 
+"}
 [2022-04-16 17:22:40] local.ERROR: file_put_contents(C:\Users\sasha\programiranje\NextBook\storage\framework/sessions/yQesXXvqCVjp0CnmnaeXnP2od16bQRsUVTmFDAmQ): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): file_put_contents(C:\\Users\\sasha\\programiranje\\NextBook\\storage\\framework/sessions/yQesXXvqCVjp0CnmnaeXnP2od16bQRsUVTmFDAmQ): Failed to open stream: No such file or directory at /var/www/html/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:187)
 [stacktrace]
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(231): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
@@ -782,7 +782,7 @@
 #37 /var/www/html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #38 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #39 {main}
-"} 
+"}
 [2022-04-16 17:22:55] local.ERROR: View [welcome] not found. {"exception":"[object] (InvalidArgumentException(code: 0): View [welcome] not found. at /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:137)
 [stacktrace]
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php(79): Illuminate\\View\\FileViewFinder->findInPaths()
@@ -833,7 +833,7 @@
 #45 /var/www/html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #46 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #47 {main}
-"} 
+"}
 [2022-04-16 17:22:56] local.ERROR: file_put_contents(C:\Users\sasha\programiranje\NextBook\storage\framework/sessions/h4og3c5xU784eHxfFZHxZrSpB5cFgyi3E4qgfHHF): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): file_put_contents(C:\\Users\\sasha\\programiranje\\NextBook\\storage\\framework/sessions/h4og3c5xU784eHxfFZHxZrSpB5cFgyi3E4qgfHHF): Failed to open stream: No such file or directory at /var/www/html/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:187)
 [stacktrace]
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(231): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
@@ -876,7 +876,7 @@
 #37 /var/www/html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #38 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #39 {main}
-"} 
+"}
 [2022-04-16 17:23:23] local.ERROR: View [welcome] not found. {"exception":"[object] (InvalidArgumentException(code: 0): View [welcome] not found. at /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:137)
 [stacktrace]
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php(79): Illuminate\\View\\FileViewFinder->findInPaths()
@@ -927,7 +927,7 @@
 #45 /var/www/html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #46 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #47 {main}
-"} 
+"}
 [2022-04-16 17:23:24] local.ERROR: file_put_contents(C:\Users\sasha\programiranje\NextBook\storage\framework/sessions/1QDkPdYkPKZNg2ktGDeulYNHAX0PmB9YtLAD0jUZ): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): file_put_contents(C:\\Users\\sasha\\programiranje\\NextBook\\storage\\framework/sessions/1QDkPdYkPKZNg2ktGDeulYNHAX0PmB9YtLAD0jUZ): Failed to open stream: No such file or directory at /var/www/html/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:187)
 [stacktrace]
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(231): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
@@ -970,7 +970,7 @@
 #37 /var/www/html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #38 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #39 {main}
-"} 
+"}
 [2022-04-16 17:24:05] local.ERROR: View [welcome] not found. {"exception":"[object] (InvalidArgumentException(code: 0): View [welcome] not found. at /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:137)
 [stacktrace]
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php(79): Illuminate\\View\\FileViewFinder->findInPaths()
@@ -1021,7 +1021,7 @@
 #45 /var/www/html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #46 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #47 {main}
-"} 
+"}
 [2022-04-16 17:24:05] local.ERROR: file_put_contents(C:\Users\sasha\programiranje\NextBook\storage\framework/sessions/ecsdaddpKfrbeW1aYOx2GY2X4hV6cDDSUvuozBv0): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): file_put_contents(C:\\Users\\sasha\\programiranje\\NextBook\\storage\\framework/sessions/ecsdaddpKfrbeW1aYOx2GY2X4hV6cDDSUvuozBv0): Failed to open stream: No such file or directory at /var/www/html/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:187)
 [stacktrace]
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(231): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
@@ -1064,7 +1064,7 @@
 #37 /var/www/html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #38 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #39 {main}
-"} 
+"}
 [2022-04-16 17:24:15] local.ERROR: View [welcome] not found. {"exception":"[object] (InvalidArgumentException(code: 0): View [welcome] not found. at /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:137)
 [stacktrace]
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php(79): Illuminate\\View\\FileViewFinder->findInPaths()
@@ -1115,7 +1115,7 @@
 #45 /var/www/html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #46 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #47 {main}
-"} 
+"}
 [2022-04-16 17:24:16] local.ERROR: file_put_contents(C:\Users\sasha\programiranje\NextBook\storage\framework/sessions/h4og3c5xU784eHxfFZHxZrSpB5cFgyi3E4qgfHHF): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): file_put_contents(C:\\Users\\sasha\\programiranje\\NextBook\\storage\\framework/sessions/h4og3c5xU784eHxfFZHxZrSpB5cFgyi3E4qgfHHF): Failed to open stream: No such file or directory at /var/www/html/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:187)
 [stacktrace]
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(231): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
@@ -1158,7 +1158,7 @@
 #37 /var/www/html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #38 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #39 {main}
-"} 
+"}
 [2022-04-16 17:28:06] local.ERROR: View [welcome] not found. {"exception":"[object] (InvalidArgumentException(code: 0): View [welcome] not found. at /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:137)
 [stacktrace]
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php(79): Illuminate\\View\\FileViewFinder->findInPaths()
@@ -1209,7 +1209,7 @@
 #45 /var/www/html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #46 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #47 {main}
-"} 
+"}
 [2022-04-16 17:28:07] local.ERROR: file_put_contents(C:\Users\sasha\programiranje\NextBook\storage\framework/sessions/h4og3c5xU784eHxfFZHxZrSpB5cFgyi3E4qgfHHF): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): file_put_contents(C:\\Users\\sasha\\programiranje\\NextBook\\storage\\framework/sessions/h4og3c5xU784eHxfFZHxZrSpB5cFgyi3E4qgfHHF): Failed to open stream: No such file or directory at /var/www/html/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:187)
 [stacktrace]
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(231): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
@@ -1252,7 +1252,7 @@
 #37 /var/www/html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #38 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #39 {main}
-"} 
+"}
 [2022-04-16 17:28:59] local.ERROR: View [welcome] not found. {"exception":"[object] (InvalidArgumentException(code: 0): View [welcome] not found. at /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:137)
 [stacktrace]
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php(79): Illuminate\\View\\FileViewFinder->findInPaths()
@@ -1303,7 +1303,7 @@
 #45 /var/www/html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #46 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #47 {main}
-"} 
+"}
 [2022-04-16 17:29:00] local.ERROR: file_put_contents(C:\Users\sasha\programiranje\NextBook\storage\framework/sessions/h4og3c5xU784eHxfFZHxZrSpB5cFgyi3E4qgfHHF): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): file_put_contents(C:\\Users\\sasha\\programiranje\\NextBook\\storage\\framework/sessions/h4og3c5xU784eHxfFZHxZrSpB5cFgyi3E4qgfHHF): Failed to open stream: No such file or directory at /var/www/html/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:187)
 [stacktrace]
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(231): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
@@ -1346,7 +1346,7 @@
 #37 /var/www/html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #38 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #39 {main}
-"} 
+"}
 [2022-04-16 17:29:59] local.ERROR: View [welcome] not found. {"exception":"[object] (InvalidArgumentException(code: 0): View [welcome] not found. at /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:137)
 [stacktrace]
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php(79): Illuminate\\View\\FileViewFinder->findInPaths()
@@ -1397,7 +1397,7 @@
 #45 /var/www/html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #46 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #47 {main}
-"} 
+"}
 [2022-04-16 17:30:00] local.ERROR: file_put_contents(C:\Users\sasha\programiranje\NextBook\storage\framework/sessions/PPHmwdTQhUznVq8zTEr3ZXk5ZvlxuSVDzuK3nCse): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): file_put_contents(C:\\Users\\sasha\\programiranje\\NextBook\\storage\\framework/sessions/PPHmwdTQhUznVq8zTEr3ZXk5ZvlxuSVDzuK3nCse): Failed to open stream: No such file or directory at /var/www/html/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:187)
 [stacktrace]
 #0 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(231): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
@@ -1440,4 +1440,4 @@
 #37 /var/www/html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #38 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #39 {main}
-"} 
+"}
