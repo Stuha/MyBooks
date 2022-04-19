@@ -7,7 +7,6 @@ use App\Http\Requests\BookRequest;
 use App\Http\Resources\BookCollection;
 use App\Http\Resources\BookResource;
 use App\Repositories\BookRepository;
-use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use function response;
 
