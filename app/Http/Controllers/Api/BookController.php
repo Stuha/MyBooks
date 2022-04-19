@@ -22,9 +22,9 @@ class BookController extends Controller
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function index(Request $request)
+    public function index()
     {
-        $books = $this->bookRepository->all($request->searchParams);
+        $books = $this->bookRepository->all();
         $books = new BookCollection($books);
 
         return $books->response();
